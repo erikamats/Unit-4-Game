@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Crystal Counter | Erika Matsumoto
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+
+<body>
+
+
+    <div id="game">
+
+
+        <div class="row" id="row-1">
+            <div class="collector" "col-lg-6">CrystalsCollector!</div>
+        </div>
+
+
+
+
+        <div class="row" id="row-2">
+
+            <div class="instructions" "col-lg-6">
+              <p>
+                  You will be given a random number at the start of the game.
+              </p>
+
+              <p>
+                  There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+              </p>
+
+              <p>
+                  You win the game by matching your total score to random number, you lose the game if your total score goes above number.
+              </p>
+
+              <p>
+                The value of each crystal is hidden from you until you click on it.
+
+              </p>
+
+              <p>
+                  Each time when the game starts, the game will change the value of each crystal.
+              </p>
+
+            </div>
+        </div>
+
+
+
+        <div class="row" id="row-3">
+
+            <div class="randomNumberDisplay" "col-md-6">
+            
+                <div class="randomNumber"></div>
+
+            </div>
+
+            <div class= "scoreBoard" "col-md-4">
+
+
+                    <div class="message">
+                        "Alert"
+                
+                    </div>
+
+                    <br>
+                    <div class="youWin">
+                     
+                            Wins:
+                        
+
+                        <div class="wins"></div>
+                    </div>
+
+                    <div class="youLose">
+                      
+                            Losses:
+                      
+                        <div class="losses"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="buttons" id="row-4" "col-md-12">
+
+                    
+                    <button class="crystal1" id="crystalButtons" "col-sm-3"> 
+                        <img src= "../images/emerald.png" alt="Emerald">
+                    </button>
+
+
+                    <button class="crystal2" id="crystalButtons" "col-sm-3"> 
+                            <img src= "../images/ruby.png" alt="Ruby">
+                        </button>
+                    
+                    <button class="crystal3" id="crystalButtons"> Crystal 3</button>
+                    
+                    <button class="crystal4" id="crystalButtons"> Crystal 4</button>
+
+                </div>
+
+
+
+
+                <div class="score" id="row-5">
+                    <div class="yourScore" "col-lg-6">
+                        <h1>
+                            Total Score:
+                        </h1>
+
+                        <div class="totalScore">
+
+                            this is where the toatl sum will appear
+
+                        </div>
+
+
+                    </div>
+
+
+                    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</body>
+
+</html>

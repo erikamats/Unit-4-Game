@@ -1,0 +1,77 @@
+body {
+
+    background-image: url("../images/paper.png");
+
+}
+
+
+
+.collector{
+    background-color: #e5790c;
+    font-size: 50px;
+    color: whitesmoke;
+    height: 70px;
+    padding:10px;
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.instructions{
+    background-color: #dbc9b8;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 1.5;
+    color: rgb(53, 130, 47);
+    height: 400px;
+    padding: 5px;
+    padding-bottom:80px;
+    width: 600px;
+    margin-bottom: 10px ;
+    
+  
+}
+
+.randomNumberDisplay{
+    background-color: #1e9c83;
+    font-size: 50px;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 10px;
+    color: purple;
+    padding: 2px;
+    float: left;
+}
+
+.scoreBoard{
+    background-color: rgb(19, 212, 212);
+    padding: 2px;
+    font-size: 1.3em;
+    width: 120px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    float: left;
+     
+}
+
+.buttons{
+    
+    width: 390px;
+    margin-bottom: 10px;
+ 
+}
+
+#crystalButtons{
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+
+}
+
+.score{
+    
+    clear: left;
+}
+
+
