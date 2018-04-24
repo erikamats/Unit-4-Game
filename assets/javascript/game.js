@@ -70,7 +70,7 @@ function winner(){
 
 function loser(){
     losses++;
-    $(".losses").append(message);
+    $(".losses").text(message);
     reset();
 }
     
