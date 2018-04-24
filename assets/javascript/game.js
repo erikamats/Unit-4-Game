@@ -37,19 +37,18 @@ var randomNumber =  Math.floor(Math.random() * (102)) + 19;
     var losses = 0;
     var totalScore = 0;
     
-    $(".wins").append(wins);
-    $(".losses").append(losses);
-    $(".totalScore").append(totalScore);
-    $(".status").append(status);
+    $(".wins").text(wins);
+    $(".losses").text(losses);
+    $(".total").append(totalScore);
     
  
 //  Reseting Game
 
 function reset() {
     randomNumber = Math.floor(Math.random() * (102)) + 19;
-    $(".randomNumber").append(randomNumber);
-    console.log("Guess this nubmer" + randomNumber);
+    $(".randomNumber").text(randomNumber);
 
+    console.log("Guess this nubmer" + randomNumber)
 
     crystal1= Math.floor(Math.random()*11+1);
     crystal2= Math.floor(Math.random()*11+1);
@@ -57,20 +56,22 @@ function reset() {
     crystal4= Math.floor(Math.random()*11+1);
     
     totalScore = 0;
-    $(".totalScore").append(totalScore);
+    $(".totalScore").text(totalScore);
 }
 
 // function for when user wins (add to win)
 function winner(){
     wins++;
-    $(".wins").text("youwin");
+    $(".wins").text(wins);
+    $(".message").text("You Win!");
     reset();
 }
 // function for when user loses (add to loses)
 
 function loser(){
     losses++;
-    $(".losses").text(message);
+    $(".losses").text(losses);
+    $(".message").text("You Lose!");
     reset();
 }
     
@@ -86,11 +87,9 @@ $(".crystal1").on("click", function(){
 
         if (totalScore === randomNumber ){
             winner();
-            $(".message").text("You Win");
         
         } else if ( totalScore > randomNumber) {
             loser();
-            $(".message").text("You Lose!");
             
         }
    
@@ -107,18 +106,19 @@ $(".crystal2").on("click", function(){
   
           if (totalScore === randomNumber ){
               winner();
-              $(".messages").append("You Win");
-          
+              
           } else if ( totalScore > randomNumber) {
-              loser();
-              $(".messages").append("You Lose!");
+              loser();     
+            
               
           }
      
   })
 
   $(".crystal3").on("click", function(){
+
     crystal1= Math.floor(Math.random() * (11)) + 1;
+
       console.log("Crystal3 Value: " + crystal3);
       totalScore = totalScore + crystal3;
   
@@ -126,11 +126,9 @@ $(".crystal2").on("click", function(){
   
           if (totalScore === randomNumber ){
               winner();
-              $(".messages").append("You Win");
           
           } else if ( totalScore > randomNumber) {
               loser();
-              $(".messages").append("You Lose!");
               
           }
      
@@ -146,11 +144,8 @@ $(".crystal2").on("click", function(){
   
           if (totalScore === randomNumber ){
               winner();
-              $(".messages").append("You Win");
-          
           } else if ( totalScore > randomNumber) {
               loser();
-              $(".messages").append("You Lose!");
               
           }
      
@@ -159,8 +154,4 @@ $(".crystal2").on("click", function(){
 
 
 });
-
-
-
-// 3. run function adds the value of the button1 clicked with button2 value to output current total score
 
