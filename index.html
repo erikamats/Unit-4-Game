@@ -37,26 +37,26 @@
         <div class="row" id="row-2">
 
             <div class="instructions" "col-lg-6">
-              <p>
-                  You will be given a random number at the start of the game.
-              </p>
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
 
-              <p>
-                  There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-              </p>
+                <p>
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                </p>
 
-              <p>
-                  You win the game by matching your total score to random number, you lose the game if your total score goes above number.
-              </p>
+                <p>
+                    You win the game by matching your total score to random number, you lose the game if your total score goes above number.
+                </p>
 
-              <p>
-                The value of each crystal is hidden from you until you click on it.
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
 
-              </p>
+                </p>
 
-              <p>
-                  Each time when the game starts, the game will change the value of each crystal.
-              </p>
+                <p>
+                    Each time when the game starts, the game will change the value of each crystal.
+                </p>
 
             </div>
         </div>
@@ -66,80 +66,95 @@
         <div class="row" id="row-3">
 
             <div class="randomNumberDisplay" "col-md-6">
-            
+
                 <div class="randomNumber"></div>
 
             </div>
 
-            <div class= "scoreBoard" "col-md-4">
+            <div class="scoreBoard" "col-md-4">
 
 
-                    <div class="message">
-                        "Alert"
-                
-                    </div>
-
+                <div class="message">
+                    <!-- "alert" -->
                     <br>
-                    <div class="youWin">
-                     
-                            Wins:
-                        
+                </div>
 
-                        <div class="wins"></div>
-                    </div>
+                <br>
 
-                    <div class="youLose">
-                      
-                            Losses:
-                      
-                        <div class="losses"></div>
-                    </div>
+                <div class="youWin">
 
+                    Wins:
+
+
+                    <span class="wins"></span>
+                </div>
+
+                <br>
+
+                <div class="youLose">
+
+                    Losses:
+
+                    <span class="losses"></span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="buttons" id="row-4" "col-sm-12">
+
+
+            <button class="crystal1" "col-sm-3">
+                <img src="assets/images/emerald.png"  class="img-thumbnail" id="crystalButtons" alt="Emerald">
+            </button>
+
+
+            <button class="crystal2" id="crystalButtons" "col-sm-3">
+                <img src="assets/images/ruby.png" 
+                class= "img-thumbnail" alt="Ruby">
+            </button>
+
+            <button class="crystal3" id="crystalButtons">
+
+                <img src="assets/images/topaz.png" class="img-thumbnail" alt="Topaz">
+
+            </button>
+
+            <button class="crystal4" id="crystalButtons">
+                <img src="assets/images/purpleDiamond.png" class="img-thumbnail" alt="Purple">
+            </button>
+
+        </div>
+
+
+
+
+        <div class="score" id="row-5">
+
+            <span class="yourScore">
+                <h1>
+                    Your Total Score is:
+                </h1>
+            </span>
+
+            <br>
+
+            <div class="total" id="row-6">
+                <div class="totalScore">
                 </div>
             </div>
 
 
+        </div>
 
 
+        <script type="text/javascript" src="assets/javascript/game.js">
 
-            <div class="buttons" id="row-4" "col-md-12">
-
-                    
-                    <button class="crystal1" id="crystalButtons" "col-sm-3"> 
-                        <img src= "../images/emerald.png" alt="Emerald">
-                    </button>
-
-
-                    <button class="crystal2" id="crystalButtons" "col-sm-3"> 
-                            <img src= "../images/ruby.png" alt="Ruby">
-                        </button>
-                    
-                    <button class="crystal3" id="crystalButtons"> Crystal 3</button>
-                    
-                    <button class="crystal4" id="crystalButtons"> Crystal 4</button>
-
-                </div>
-
-
-
-
-                <div class="score" id="row-5">
-                    <div class="yourScore" "col-lg-6">
-                        <h1>
-                            Total Score:
-                        </h1>
-
-                        <div class="totalScore">
-
-                            this is where the toatl sum will appear
-
-                        </div>
-
-
-                    </div>
-
-
-                    <script type="text/javascript" src="assets/javascript/game.js"></script>
+        </script>
 
 
 </body>
